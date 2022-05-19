@@ -1,0 +1,566 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    background-color: #000000;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2000 1500'%3E%3Cdefs%3E%3Cellipse fill='none' stroke-width='200' id='a' rx='600' ry='450'/%3E%3C/defs%3E%3Cg style='transform-origin:center'%3E%3Cg transform='' style='transform-origin:center'%3E%3Cg transform='rotate(-160 0 0)' style='transform-origin:center'%3E%3Cg transform='translate(1000 750)'%3E%3Cuse stroke='%2327002B' href='%23a' transform='rotate(-60 0 0) scale(0.4)'/%3E%3Cuse stroke='%23340035' href='%23a' transform='rotate(-50 0 0) scale(0.5)'/%3E%3Cuse stroke='%233e0039' href='%23a' transform='rotate(-40 0 0) scale(0.6)'/%3E%3Cuse stroke='%2348003c' href='%23a' transform='rotate(-30 0 0) scale(0.7)'/%3E%3Cuse stroke='%2352003d' href='%23a' transform='rotate(-20 0 0) scale(0.8)'/%3E%3Cuse stroke='%235b003c' href='%23a' transform='rotate(-10 0 0) scale(0.9)'/%3E%3Cuse stroke='%2365003a' href='%23a' transform=''/%3E%3Cuse stroke='%236e0036' href='%23a' transform='rotate(10 0 0) scale(1.1)'/%3E%3Cuse stroke='%23780030' href='%23a' transform='rotate(20 0 0) scale(1.2)'/%3E%3Cuse stroke='%23820028' href='%23a' transform='rotate(30 0 0) scale(1.3)'/%3E%3Cuse stroke='%238b001f' href='%23a' transform='rotate(40 0 0) scale(1.4)'/%3E%3Cuse stroke='%23950015' href='%23a' transform='rotate(50 0 0) scale(1.5)'/%3E%3Cuse stroke='%239f0008' href='%23a' transform='rotate(60 0 0) scale(1.6)'/%3E%3Cuse stroke='%23a80600' href='%23a' transform='rotate(70 0 0) scale(1.7)'/%3E%3Cuse stroke='%23b21600' href='%23a' transform='rotate(80 0 0) scale(1.8)'/%3E%3Cuse stroke='%23bc2700' href='%23a' transform='rotate(90 0 0) scale(1.9)'/%3E%3Cuse stroke='%23c53a00' href='%23a' transform='rotate(100 0 0) scale(2)'/%3E%3Cuse stroke='%23cf4f00' href='%23a' transform='rotate(110 0 0) scale(2.1)'/%3E%3Cuse stroke='%23d86500' href='%23a' transform='rotate(120 0 0) scale(2.2)'/%3E%3Cuse stroke='%23e27e00' href='%23a' transform='rotate(130 0 0) scale(2.3)'/%3E%3Cuse stroke='%23ec9700' href='%23a' transform='rotate(140 0 0) scale(2.4)'/%3E%3Cuse stroke='%23f5b300' href='%23a' transform='rotate(150 0 0) scale(2.5)'/%3E%3Cuse stroke='%23FFD000' href='%23a' transform='rotate(160 0 0) scale(2.6)'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+background-attachment: fixed;
+background-size: cover;
+}
+section{
+    margin-top: 200px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #27002B;
+    opacity: 0.9;
+  }
+  
+li {
+    float: left;
+  }
+  
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+li a:hover {
+    background-color: #111;
+  }
+#Me{
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    margin-top: 150px;
+}
+#Works{
+    margin-top: 400px;
+}
+#Works-text{
+    margin-left: 45%;
+    color: aliceblue;
+}
+
+.wrap{
+    width: 100px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+.tarjeta-wrap{
+    margin: 10px;
+    -webkit-perspective: 800;
+    perspective: 800;
+    
+}
+
+.tarjeta{
+    width: 300px;
+    height: 350px;
+    background: orange;
+    position: relative;
+    transform-style:preserve-3d;
+    transition: .7s ease;
+    -webkit-box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
+    -moz-box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
+    box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
+  
+
+}
+
+.adelante, .atras{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+.adelante{
+    width: 100%;
+}
+
+.atras{
+    transform: rotateY(180deg);
+    color: white;
+    text-align: center;
+    font-family: "open sans";
+}
+
+.tarjeta-wrap:hover .tarjeta{
+    transform: rotateY(180deg);
+    
+}
+.card1{
+    background-image: url(img/perfil.png);
+    background-size: cover;
+    background-position: center;
+}
+.card-body{
+    background-color: grey;
+}
+
+.Habi{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+#HabiText{
+    position: absolute;
+    top: 40%;
+    left: 31%;
+    font-size: 1.5em;
+    color: aliceblue;
+}
+.Front{
+    position: relative;
+    display: table;
+    text-align: center;
+}
+#FrontText{
+    position: absolute;
+    top: 40%;
+    left: 37%;
+    font-size: 1em;
+    color: aliceblue;
+}
+#FrontImg{
+    width: 80%;
+    height: 80%;
+
+}
+.Back{
+    position: relative;
+    display: table;
+    text-align: center;
+    transform: translate(160%, -98%);
+}
+#BackText{
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    font-size: 1em;
+    color: aliceblue;
+}
+#BackImg{
+    width: 80%;
+    height: 80%;
+
+}
+.Desi{
+    position: relative;
+    display: table;
+    text-align: center;
+    transform: translate(310%, -195%);
+}
+#DesiText{
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    font-size: 1em;
+    color: aliceblue;
+}
+#DesiImg{
+    width: 80%;
+    height: 80%;
+
+}
+#FrontLogo{
+    position: absolute;
+    height: 30%;
+    margin-left: 60px;
+    margin-top: 30px;
+
+}
+#FrontLogo1{
+    position: absolute;
+    height: 30%;
+    transform: translate(27%, 130%);
+}
+#BackLogo{
+    position: absolute;
+    height: 30%;
+    transform: translate(436%, -47%);
+}
+#BackLogo2{
+    position: absolute;
+    height: 30%;
+    transform: translate(298%, 75%);
+}
+#DesiLogo{
+    position: absolute;
+    height: 25%;
+    transform: translate(654%, -108%);
+}
+
+/* Main heading for card's front cover */
+.card-front__heading {
+    font-size: 1.5rem;
+    margin-top: .25rem;
+  }
+  
+  /* Main heading for inside page */
+  .inside-page__heading { 
+    padding-bottom: 1rem; 
+    width: 100%;
+  }
+  
+  /* Mixed */
+  
+  /* For both inside page's main heading and 'view me' text on card front cover */
+  .inside-page__heading,
+  .card-front__text-view {
+    font-size: 1.3rem;
+    font-weight: 800;
+    margin-top: .2rem;
+  }
+  
+  .inside-page__heading--city,
+  .card-front__text-view--city { color: #ff62b2; }
+  
+  .inside-page__heading--ski,
+  .card-front__text-view--ski { color: #2aaac1; }
+  
+  .inside-page__heading--beach,
+  .card-front__text-view--beach { color: #fa7f67; }
+  
+  .inside-page__heading--camping,
+  .card-front__text-view--camping { color: #00b97c; }
+  
+  /* Front cover */
+  
+  .card-front__tp { color: #fafbfa; }
+  
+  /* For pricing text on card front cover */
+  .card-front__text-price {
+    font-size: 1.2rem;
+    margin-top: -.2rem;
+  }
+  
+  /* Back cover */
+  
+  /* For inside page's body text */
+  .inside-page__text {
+    color: #333;
+  }
+  
+  /* Icons ===========================================*/
+  
+  .card-front__icon {
+    fill: #fafbfa;
+    font-size: 3vw;
+    height: 3.25rem;
+    margin-top: -.5rem;
+    width: 3.25rem;
+  }
+  
+  /* Buttons =================================================*/
+  
+  .inside-page__btn {
+    background-color: transparent;
+    border: 3px solid;
+    border-radius: .5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 2rem;
+    overflow: hidden;
+    padding: .7rem .75rem;
+    position: relative;
+    text-decoration: none;
+    transition: all .3s ease;
+    width: 90%;
+    z-index: 10;
+  }
+  
+  .inside-page__btn::before { 
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transform: scaleY(0);
+    transition: all .3s ease;
+    width: 100%;
+    z-index: -1;
+  }
+  
+  .inside-page__btn--city { 
+    border-color: #ff40a1;
+    color: #ff40a1;
+  }
+  
+  .inside-page__btn--city::before { 
+    background-color: #ff40a1;
+  }
+  
+  .inside-page__btn--ski { 
+    border-color: #279eb2;
+    color: #279eb2;
+  }
+  
+  .inside-page__btn--ski::before { 
+    background-color: #279eb2;
+  }
+  
+  .inside-page__btn--beach { 
+    border-color: #fa7f67;
+    color: #fa7f67;
+  }
+  
+  .inside-page__btn--beach::before { 
+    background-color: #fa7f67;
+  }
+  
+  .inside-page__btn--camping { 
+    border-color: #00b97d;
+    color: #00b97d;
+  }
+  
+  .inside-page__btn--camping::before { 
+    background-color: #00b97d;
+  }
+  
+  .inside-page__btn:hover { 
+    color: #fafbfa;
+  }
+  
+  .inside-page__btn:hover::before { 
+    transform: scaleY(1);
+  }
+  
+  /* Layout Structure=========================================*/
+  
+  .main {
+    background: linear-gradient(
+      to bottom right,
+      #eee8dd,
+      #e3d9c6
+    );
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+  }
+  
+  /* Container to hold all cards in one place */
+  .card-area {
+    align-items: center;
+    display: flex;
+    flex-wrap: nowrap;
+    height: 100%;
+    justify-content: space-evenly;
+    padding: 1rem;
+    padding-top: 150px;
+  }
+  
+  /* Card ============================================*/
+  
+  /* Area to hold an individual card */
+  .card-section {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  /* A container to hold the flip card and the inside page */
+  .card {
+    background-color: rgba(0,0,0, .05);
+    box-shadow: -.1rem 1.7rem 6.6rem -3.2rem rgba(0,0,0,0.5);
+    height: 15rem;
+    position: relative;
+    transition: all 1s ease;
+    width: 15rem;
+  }
+  
+  /* Flip card - covering both the front and inside front page */
+  
+  /* An outer container to hold the flip card. This excludes the inside page */
+  .flip-card {
+    height: 15rem;
+    perspective: 100rem;
+    position: absolute;
+    right: 0;
+    transition: all 1s ease;
+    visibility: hidden;
+    width: 15rem;
+    z-index: 100;
+  }
+  
+  /* The outer container's visibility is set to hidden. This is to make everything within the container NOT set to hidden  */
+  /* This is done so content in the inside page can be selected */
+  .flip-card > * {
+    visibility: visible;
+  }
+  
+  /* An inner container to hold the flip card. This excludes the inside page */
+  .flip-card__container {
+    height: 100%;
+    position: absolute;
+    right: 0;
+    transform-origin: left;
+    transform-style: preserve-3d;
+    transition: all 1s ease;
+    width: 100%;
+  }
+  
+  .card-front,
+  .card-back {
+    backface-visibility: hidden;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+  
+  /* Styling for the front side of the flip card */
+  
+  /* container for the front side */
+  .card-front {
+    background-color: #fafbfa;
+    height: 15rem;
+    width: 15rem;
+  }
+  
+  /* Front side's top section */
+  .card-front__tp {
+    align-items: center;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 57% 90%, 50% 100%, 43% 90%, 0 90%);
+    display: flex;
+    flex-direction: column;
+    height: 12rem;
+    justify-content: center;
+    padding: .75rem;
+  }
+  
+  .card-front__tp--city {
+    background: linear-gradient(
+      to bottom,
+      #97569e,
+      #f86647
+    );
+  }
+  
+  .card-front__tp--ski {
+    background: linear-gradient(
+      to bottom,
+      #97569e,
+      #f86647
+    );
+  }
+  
+  .card-front__tp--beach {
+    background: linear-gradient(
+      to bottom,
+      #97569e,
+      #f86647
+    );
+  }
+  
+  .card-front__tp--camping {
+    background: linear-gradient(
+      to bottom,
+      #97569e,
+      #f86647
+    );
+  }
+  
+  /* Front card's bottom section */
+  .card-front__bt {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Styling for the back side of the flip card */
+  
+  .card-back {
+    background-color: #fafbfa;
+    transform: rotateY(180deg);
+  }
+  
+  /* Specifically targeting the <video> element */
+  .video__container {
+    clip-path: polygon(0% 0%, 100% 0%, 90% 50%, 100% 100%, 0% 100%);
+    height: auto;
+    min-height: 100%;
+    object-fit: cover;
+    width: 100%;
+  }
+  
+  /* Inside page */
+  
+  .inside-page {
+    background-color: #fafbfa;
+    box-shadow: inset 20rem 0px 5rem -2.5rem rgba(0,0,0,0.25);
+    height: 100%;
+    padding: 1rem;
+    position: absolute;
+    right: 0;
+    transition: all 1s ease;
+    width: 15rem;
+    z-index: 1;
+  }
+  
+  .inside-page__container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    text-align: center; 
+    width: 100%;
+  }
+  
+  /* Functionality ====================================*/
+  
+  /* This is to keep the card centered (within its container) when opened */
+  .card:hover {
+    box-shadow:
+    -.1rem 1.7rem 6.6rem -3.2rem rgba(0,0,0,0.75);
+    width: 30rem;
+  }
+  
+  /* When the card is hovered, the flip card container will rotate */
+  .card:hover .flip-card__container {
+    transform: rotateY(-180deg);
+  }
+  
+  /* When the card is hovered, the shadow on the inside page will shrink to the left */
+  .card:hover .inside-page {
+    box-shadow: inset 1rem 0px 5rem -2.5rem rgba(0,0,0,0.1);
+  }
+  
+  /* Footer ====================================*/
+  
+  .footer {
+    background-color: #333;
+     margin-top: 3rem;
+    padding: 1rem 0;
+    width: 100%;
+  }
+  
+  .footer-text {
+    color: #fff;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+#MyWorks{
+      transform: translate(0, -50%);
+  }
